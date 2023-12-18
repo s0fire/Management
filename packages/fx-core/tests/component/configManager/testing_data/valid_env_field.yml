@@ -1,0 +1,9 @@
+version: 1.0.0
+provision:
+  # Run npm command
+  - uses: cli/runNpmCommand
+    with:
+      args: install --production
+    env: 
+      ENV_VAR1: value1
+      ENV_VAR2: value2

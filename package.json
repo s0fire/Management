@@ -1,0 +1,32 @@
+{
+  "name": "teamsfx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "pnpm install && npm run build",
+    "watch": "pnpm --parallel -r run watch",
+    "build": "pnpm -r run --filter=!@microsoft/teamsfx-react build && pnpm run --filter=@microsoft/teamsfx-react build",
+    "precommit": "lint-staged",
+    "clean": "pnpm -r exec rimraf node_modules",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "codecov": "^3.8.3",
+    "codeowners": "^5.1.1",
+    "dotenv": "^10.0.0",
+    "husky": "^6.0.0",
+    "lerna": "^6.6.2",
+    "pnpm": "^8.6.12",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.2.1"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  },
+  "packageManager": "pnpm@8.6.12"
+}

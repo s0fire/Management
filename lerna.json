@@ -1,0 +1,14 @@
+{
+  "version": "independent",
+  "command": {
+    "version": {
+      "message": "build(release): publish detail",
+      "allowBranch": ["main"]
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "npmClient": "pnpm",
+  "useWorkspaces": true
+}
